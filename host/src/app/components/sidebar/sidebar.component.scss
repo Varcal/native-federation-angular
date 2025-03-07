@@ -1,0 +1,37 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #343a40;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    .menu {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        padding: 15px 0;
+        a {
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-size: 18px;
+          
+          i {
+            font-size: 20px;
+          }
+        }
+        a:hover {
+          color: #17a2b8;
+        }
+      }
+    }
+  }
+  

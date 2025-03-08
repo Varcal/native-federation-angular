@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,4 +9,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class SidebarComponent {
 
+  constructor(private router: Router) {}
+
+  navigateTo(route: string) {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate([route]);
+    });
+  }
 }

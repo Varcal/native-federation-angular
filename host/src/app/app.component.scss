@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  height: 100vh; /* Garante altura total da tela */
+}
+
+
+
+.content {
+  flex-grow: 1; /* Faz o conteúdo ocupar o restante da tela */
+  margin-left: 250px; /* Compensa a largura do sidebar */
+  padding: 20px;
+  overflow: auto; /* Evita problemas de rolagem */
+}
